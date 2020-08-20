@@ -10,6 +10,8 @@ This part of the project comprises two days:
    on the BSTNode class.
 """
 
+from stack import Stack
+
 
 class BSTNode:
     def __init__(self, value):
@@ -65,15 +67,19 @@ class BSTNode:
     # Print all the values in order from low to high
     # Hint:  Use a recursive, depth first traversal
     def in_order_print(self, node):
-        pass
+        if self.value == min(node):
+            self.in_order_print(self.value)
+        if self.value >
 
-    # Print the value of every node, starting with the given node,
-    # in an iterative breadth first traversal
+        # Print the value of every node, starting with the given node,
+        # in an iterative breadth first traversal
+
     def bft_print(self, node):
         pass
 
-    # Print the value of every node, starting with the given node,
-    # in an iterative depth first traversal
+        # Print the value of every node, starting with the given node,
+        # in an iterative depth first traversal
+
     def dft_print(self, node):
         pass
 
